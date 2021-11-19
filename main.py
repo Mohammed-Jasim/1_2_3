@@ -31,10 +31,15 @@ apple5.goto(-200, 0)
 
 letters=['a','b','c','d','e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r','s', 't','u', 'v', 'w','x','y','z']
 letter1 = letters[random.randint(1, 26)]
-letter2 = letters[random.randint(1, 26)]
-letter3 = letters[random.randint(1, 26)]
-letter4 = letters[random.randint(1, 26)]
-letter5 = letters[random.randint(1, 26)]
+letters.pop(letters.index(str(letter1)))
+letter2 = letters[random.randint(1, 25)]
+letters.pop(letters.index(str(letter2)))
+letter3 = letters[random.randint(1, 24)]
+letters.pop(letters.index(str(letter3)))
+letter4 = letters[random.randint(1, 23)]
+letters.pop(letters.index(str(letter4)))
+letter5 = letters[random.randint(1, 22)]
+letters.pop(letters.index(str(letter5)))
 #-----functions-----
 # given a turtle, set that turtle to be shaped by the image file
 def drop_apple():
